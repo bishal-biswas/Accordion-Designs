@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3e8ed2, #00f315);
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section h1 {
+            color: #fff;
+            padding: 5% 0;
+        }
+        /*---------------------------------*/
+        .Styl-Accordion {
+            width: 70%;
+        }
+
+        .Styl-Accordion .content {
+            margin: 5px 0;
+            box-shadow: 0 0 5px 0px #484848;
+        }
+
+        .Styl-Accordion .content .Heading {
+            padding: 15px 25px;
+            display: flex;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            background-color: #4e4e4e9e;
+            justify-content: space-between;
+        }
+
+        .Styl-Accordion .content .answer {
+            display: none;
+            padding: 10px 5%;
+            color: #fff;
+            background-color: #0000001f;
+            border-top: .5px solid #d4d4d4;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .Show {
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .rot180 {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Stylish Accordion</h1>
+        <div class="Styl-Accordion">
+            <div class="content">
+                <span class='Heading'>Who Named the Earth?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">The name "Earth" is derived from both English and German words, 'eor(th)e/ertha' and 'erde', respectively, which mean ground. But, the handle's creator is unknown. One interesting fact about its name: Earth is the only planet that wasn't named after a Greek or Roman god or goddess.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Who gave the name India?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">Herodotus<br>The name "India" is originally derived from the name of the river Sindhu (Indus River) and has been in use in Greek since Herodotus (4th century BCE).
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Who explored India first?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer"> Vasco de Gama<br>
+                    Portuguese explorer Vasco de Gama becomes the first European to reach India via the Atlantic Ocean when he arrives at Calicut on the Malabar Coast. Da Gama sailed from Lisbon, Portugal, in July 1497, rounded the Cape of Good Hope, and anchored at Malindi on the east coast of Africa.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>History of Earth<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">Earth formed around 4.54 billion years ago, approximately one-third the age of the universe, by accretion from the solar nebula. Volcanic outgassing probably created the primordial atmosphere and then the ocean, but the early atmosphere contained almost no oxygen.
+                </span>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Accordion-Script.js"></script>
+</body>
+</html>

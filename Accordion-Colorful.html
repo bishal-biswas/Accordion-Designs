@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloured Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3e8ed2, #00f315);
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section h1 {
+            color: #fff;
+            padding: 5% 0;
+        }
+        /*---------------------------------*/
+        .Colful-Accordion {
+            width: 70%;
+        }
+
+        .Colful-Accordion .content {
+            margin: 5px 0;
+            box-shadow: 0 0 5px 0px #484848;
+        }
+
+        .Colful-Accordion .content .Heading {
+            padding: 15px 25px;
+            display: flex;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: #fff;
+        }
+
+        .Colful-Accordion .content .Heading .Show {
+            margin-right: 5%;
+            color: #6495ed;
+            font-size: larger;
+        }
+
+        .Colful-Accordion .content .answer {
+            display: none;
+            padding: 10px 5%;
+            color: #fff;
+            background-color: #fff;
+            box-shadow: inset 0px 3px 13px -7px black;
+            border-top: .5px solid #d4d4d4;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .Show {
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .rot180 {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Colorful Accordion Symbol</h1>
+        <div class="Colful-Accordion">
+            <div class="content">
+                <span class='Heading' style="border-right: 10px solid greenyellow;"><i class="fa fa-plus Show"></i>Who made the first computer?</span>
+                <span class="answer" style="color: green;">English mathematician and inventor Charles Babbage is credited with having conceived the first automatic digital computer. During the mid-1830s Babbage developed plans for the Analytical Engine.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading' style="border-right: 10px solid orange;"><i class="fa fa-plus Show"></i>When was first computer invented?</span>
+                <span class="answer" style="color: orange;">The ENIAC was invented by J. Presper Eckert and John Mauchly at the University of Pennsylvania and began construction in 1943 and was not completed until 1946. It occupied about 1,800 square feet and used about 18,000 vacuum tubes, weighing almost 50 tons.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading' style="border-right: 10px solid #9fb0ff;"><i class="fa fa-plus Show"></i>What is computer full form?</span>
+                <span class="answer" style="color: #9fb0ff;">COMPUTER stands for Common Operating Machine Purposely Used for Technological and Educational Research
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading' style="border-right: 10px solid #ff34cc;"><i class="fa fa-plus Show"></i>What age should a child get a computer?</span>
+                <span class="answer" style="color: #ff34cc;">If your child is between 8 and 12 years old and begins to seek more independence and privacy, this will probably be the best time to invest in their first laptop.
+                </span>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Accordion-Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3e8ed2, #00f315);
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section h1 {
+            color: #fff;
+            padding: 5% 0;
+        }
+        /*---------------------------------*/
+        .Ani-Chevro-Accordion {
+            width: 70%;
+        }
+
+        .Ani-Chevro-Accordion .content {
+            border-radius: 5px;
+            margin: 5px 0;
+            background-color: #fff;
+        }
+
+        .Ani-Chevro-Accordion .content .Heading {
+            padding: 15px 25px;
+            display: flex;
+            cursor: pointer;
+            font-weight: 600;
+            justify-content: space-between;
+        }
+
+        .Ani-Chevro-Accordion .content .answer {
+            display: none;
+            padding: 10px 5%;
+            border-top: .5px solid #d4d4d4;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .Show {
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .rot180 {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Accordion with Animated Chevro Symbol</h1>
+        <div class="Ani-Chevro-Accordion">
+            <div class="content">
+                <span class='Heading'>Why is Wikipedia bad? <i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">
+                    Wikipedia can be edited by anyone at any time. This means that any information it contains at any particular time could be vandalism, a work in progress, or just plain wrong. However, because Wikipedia is a volunteer-run project, it cannot monitor every contribution all the time.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>How did Wikipedia get its name?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">
+                    The name "Wikipedia" is a blending of the words wiki (a technology for creating collaborative websites, from the Hawaiian word wiki, meaning "quick") and encyclopedia. Wikipedia's articles provide links designed to guide the user to related pages with additional information.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>How many pages are on Wikipedia?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">
+                    As of 28 March 2021, there are 6,277,424 articles in the English Wikipedia containing over 3.83 billion words (giving an average of about 611 words per article), and 53,018,221 pages.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Does Wikipedia Make Money?<i class="fa fa-chevron-down Show"></i></span>
+                <span class="answer">
+                    Wikipedia gets most of its money through donations, but also sells goods on the Wikipedia store. ... Wikipedia is hosted by the Wikimedia Foundation, and is funded primarily by reader donations.
+                </span>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Accordion-Script.js"></script>
+</body>
+</html>

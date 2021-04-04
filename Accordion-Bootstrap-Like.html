@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3e8ed2, #00f315);
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section h1 {
+            color: #fff;
+            padding: 5% 0;
+        }
+        /*---------------------------------*/
+        .boot-Accordion {
+            width: 70%;
+        }
+
+        .boot-Accordion .content {
+            margin: 5px 0;
+            border: 1px solid #d4d4d4;
+        }
+
+        .boot-Accordion .content .Heading {
+            padding: 15px 25px;
+            display: flex;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: #f1f1f1;
+            justify-content: space-between;
+        }
+
+        .boot-Accordion .content .answer {
+            display: none;
+            padding: 10px 5%;
+            background-color: #fff;
+            border-top: .5px solid #d4d4d4;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .Show {
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .rot180 {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Bootstrap Like Accordion</h1>
+        <div class="boot-Accordion">
+            <div class="content">
+                <span class='Heading'>How many bloggers are successful? <i class="fa fa-plus Show"></i></span>
+                <span class="answer">We ask bloggers to report on results and each year, around 1 in 4 bloggers report “strong results.” Of course, “strong results” are subjective and self-reported. There are 31 million bloggers online (source) with a wide range of goals: fame and fortune, reach and revenue, links and leads.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Who is the richest blogger in the world?<i class="fa fa-plus Show"></i></span>
+                <span class="answer">
+                    <img height="150px" src="https://www.thinkingheads.com/wp-content/uploads/2019/07/arianna-huffington-speaker-media-journalism-thinking-heads.jpg" alt="">
+                    <br>Arianna Huffington
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Who was the first blogger?<i class="fa fa-plus Show"></i></span>
+                <span class="answer">
+                    Justin Hall, who began eleven years of personal blogging in 1994 while a student at Swarthmore College, is generally recognized as one of the earliest bloggers, as is Jerry Pournelle.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>How do bloggers get paid?<i class="fa fa-plus Show"></i></span>
+                <span class="answer">The two main ways bloggers get paid through ad networks are per impression or per click. Paid per impression – with these ads, the viewer does not have to click on the ad in order for the blogger to receive an income. ... “advertisers pay website owners based on how many people have seen their ads.
+                </span>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Accordion-Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3e8ed2, #00f315);
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section h1 {
+            color: #fff;
+            padding: 5% 0;
+        }
+        /*---------------------------------*/
+        .Accordion-normal {
+            width: 70%;
+        }
+
+        .Accordion-normal .content {
+            border-radius: 5px;
+            margin: 5px 0;
+            background-color: #fff;
+        }
+
+        .Accordion-normal .content .Heading {
+            padding: 15px 25px;
+            display: flex;
+            cursor: pointer;
+            font-weight: 600;
+            justify-content: space-between;
+        }
+
+        .Accordion-normal .content .answer {
+            display: none;
+            padding: 10px 5%;
+            border-top: .5px solid #d4d4d4;
+            text-align: center;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Normal Accordion Style</h1>
+        <div class="Accordion-normal">
+            <div class="content">
+                <span class='Heading'>What is special about Google?</span>
+                <span class="answer">
+                    Launched from a Stanford dorm room in 1995, Google is a money-making machine. Google is one of only three or four companies that have figured out how to make piles of cash from the Internet. ... And the company is unapologetic about its dot com corporate culture
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>What was Google's original name?</span>
+                <span class="answer">
+                    According to Stanford's David Koller, and Google's own website, Page and Brin's 1996 foray into the world of search engines was initially called “BackRub.” Yes, BackRub. They called it this because the program analyzed the web's “back links” to understand how important a website was, and what other sites it related to.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Why is Google famous?</span>
+                <span class="answer">
+                    Google's original business was creating algorithms to help people sort quickly through the rapidly growing amount of content being put online. ... Because it started strong and just kept getting better and better, Google became the go-to search engine for the Internet in the space of a few years.
+                </span>
+            </div>
+            <div class="content">
+                <span class='Heading'>Why Google is so fast?</span>
+                <span class="answer">
+                    There are number of things that Google does to ensure data is returned to you very fast: ... That index is distributed and replicated across Google's many servers. Your query is split across multiple servers to build the returned results. This allows the process to be highly parallelized.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Accordion-Script.js"></script>
+</body>
+</html>
